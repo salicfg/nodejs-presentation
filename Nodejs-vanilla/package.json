@@ -1,0 +1,20 @@
+{
+  "name": "mvc-vanilla",
+  "version": "1.0.0",
+  "description": "Nodejs alapok elaodas",
+  "main": "server.js",
+  "scripts": {
+    "dev": "set NODE_ENV=development&& nodemon server.js",
+    "start": "set NODE_ENV=production&& node server.js"
+  },
+  "author": "Sali Istvan",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "uuid": "^8.3.2",
+    "winston": "^3.3.3"
+  }
+}

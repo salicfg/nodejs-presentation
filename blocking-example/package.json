@@ -1,0 +1,21 @@
+{
+  "name": "blocking-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "colors": "^1.4.0",
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "node-fetch": "^3.1.0"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "name": "express-typescript",
+  "version": "1.0.0",
+  "description": "Express typescript demo",
+  "main": "server.js",
+  "scripts": {
+    "build": "tsc --project .",
+    "build_clean:win": "rmdir /s /q dist && tsc --project .",
+    "build_clean:unix": "rm -rf ./dist && tsc --project .",
+    "start": "set NODE_ENV=development&& node --experimental-specifier-resolution=node --loader ts-node/esm.mjs ./src/server.ts",
+    "start:prod": "npm run build && set NODE_ENV=production&& node --experimental-specifier-resolution=node ./dist/server.js",
+    "dev": "set NODE_ENV=development&& nodemon --legacy-watch"
+  },
+  "author": "Sali Istvan",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "joi": "^17.5.0",
+    "mongoose": "^6.0.14",
+    "morgan": "^1.10.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/joi": "^17.2.3",
+    "@types/morgan": "^1.9.3",
+    "@types/node": "^16.11.11",
+    "@types/uuid": "^8.3.3",
+    "@typescript-eslint/eslint-plugin": "^5.5.0",
+    "@typescript-eslint/parser": "^5.5.0",
+    "eslint": "^8.4.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.5.1",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.2"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "express",
+  "version": "1.0.0",
+  "description": "Express demo",
+  "main": "server.js",
+  "scripts": {
+    "dev": "set NODE_ENV=development&& nodemon server.js",
+    "start": "set NODE_ENV=production&& node server.js"
+  },
+  "author": "Sali Istvan",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "joi": "^17.5.0",
+    "morgan": "^1.10.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "prettier": "^2.5.0"
+  }
+}
